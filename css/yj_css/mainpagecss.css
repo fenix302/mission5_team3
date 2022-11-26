@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img#logo{
+    height: 100px;
+    width: 200px;
+    margin-left: 10%;
+}
+
+
+/* .card{
+    height: 700px;
+    width: 350px;
+}
+.card>img{
+    height: 400px;
+    width: 350px;
+
+} */
+
+.card-group{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sliderboxA{
+
+    margin-left: 30%;
+}
+
+
+footer{
+    height:100px;
+	/* width: 1152px; */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+
+

@@ -1,0 +1,1 @@
+$().ready(function() { $('#wrapper').tubular({videoId: 'idOfYourVideo'}); // where idOfYourVideo is the YouTube ID. });
