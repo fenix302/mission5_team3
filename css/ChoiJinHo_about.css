@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JSongMyung-Regular-KO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: GangwonEduPowerExtraBoldA;
+}
+
+.row{
+    margin-top: 20px;
+}
+.navbar-brand {
+    font-size: 30px;
+}
+.navbar-brand img{
+    width: 50px;
+    margin-right: 10px;
+}
+.navbar{
+    padding: 20px ;
+    background-color: rgb(255, 255, 255) !important
+}
+
+.navbar-nav li{
+    margin-left: 70px;
+}
+.navbar-nav li a{
+    font-size: 20px;
+}
+.breadcrumb{
+    padding-top: 20px;
+}
+.tab-pane{
+    margin: 20px;
+    text-align: center;
+
+}
+.tab-pane h4, h6{
+    font-family: JSongMyung-Regular-KO;
+    font-weight: bold;
+}
