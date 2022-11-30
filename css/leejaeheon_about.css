@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#bodywrap{
+    position: relative;
+}
+.navigation{
+    position: relative;
+    margin: 0 auto;
+    width: 80vw;
+    height: 70px;
+    margin-top: 10px;
+    z-index: 100;
+}
+
+.imgslide{
+    margin: 0 auto;
+    width: 80vw;
+    height: 20vw;
+}
+
+.content{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80vw;
+}
+
+.content_card{
+    text-align: center;
+}
+
+.card{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
