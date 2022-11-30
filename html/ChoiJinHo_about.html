@@ -11,47 +11,103 @@
     <script src="../javascript/yj/bootstrap.js"></script>
 </head>
 <body>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <a class="navbar-brand" href="ChoiJinHo_about.html"><img src="../resources/Jinho/images/drone.svg" alt="JH드론">(주) JH드론</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">소개</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">갤러리</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">로그인</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    서비스
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">FAQ</a>
-                    <a class="dropdown-item" href="#">오시는길</a>
-                    <a class="dropdown-item" href="#">Contact</a>
-                  </div>
-                </li>
-              </ul>
-         
-            </div>
-        </nav>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">메인화면</a></li>
-            <li class="breadcrumb-item active" aria-current="page">회사소개</li>
-          </ol>
-        </nav>
-        <div class="row">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="ChoiJinHo_about.html"><img src="../resources/Jinho/images/drone.svg" alt="JH컴퍼니">JH컴퍼니</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">소개</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">갤러리</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">로그인</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                서비스
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">FAQ</a>
+                <a class="dropdown-item" href="#">오시는길</a>
+                <a class="dropdown-item" href="#">Contact</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+  <div id="ms1" class="container bg-holder" data-width="1200" data-height="600">
+    <section class="content">
+        <h3>SBS : 함께 만드는 기쁨</h3>
+        <p>
+            SBS는 태영건설의 지주사 TY홀딩스 소유의 <br>
+            대한민국을 가시청권으로 하는 지상파 방송상입니다.
+        </p>
+    </section>
+  </div>
+<!-- 두번째 섹션 정의-->
+  <div id="ms2" class="container bg-holder" data-width="1200" data-height="600">
+    <section class="content">
+        <h3>대한민국 대표 공영미디어 KBS</h3>
+        <p>
+            한국방송공사는 방송업무와 더불어 <br>
+            각 분야에 걸친 사업을 전개하고 있습니다!
+        </p>
+    </section>
+  </div>
+<!-- 세번째 섹션 정의 -->
+  <div id="ms3" class="container bg-holder" data-width="1200" data-height="600">
+    <section class="content">
+        <h3>만나면 좋은 친구 MBC</h3>
+        <p>
+            현재의 부산문화방송은 개국 당시부터 <br>
+            1965년까지 문화방송이라는 명칭을 사용합니다!
+        </p>
+    </section>
+  </div>
+  <script src="../javascript/jquery.parallax-scroll.min.js"></script>
+  <script>
+    $(function(){
+        $('.scroll').click(function(e){
+            // 이벤트가 발생했을 때의 기본 동작, 즉 #ms1 이나 #ms2로 즉시 이동하는 동작을 취소합니다.
+            e.preventDefault();
+            // animate(height, speed) 메서드로 지정한 시간 동안 현재 해시의 top 오프셋 값(맨 위에서부터 섹션까지의 오프셋 값)을 스크롤 했을 때의 위치값으로 바꿉니다. 예를 들어, "CH07 KBS"를 클릭하면, 문서 맨 윗부분에서 #ms2 까지의 top 위치까지 500ms(0.5초) 동안 스크롤해서 이동합니다. 그리고, 브라우저로 확인해 보면 링크를 클릭했을 때 해당 위치까지 스크롤하듯 천천히 이동하는 것을 볼 수 있습니다.
+            $('html, body').animate(
+                {scrollTop:$(this.hash).offset().top},500);
+        });
+        // 브라우저 창의 크기를 조절했을 때 내용 전체가 브라우저 창의 너비와 높이에 딱 맞게 표시되도록 jQuery를 사용해 브라우저 창의 크기를 알아낸 후 현재 문서의 너비와 높이로 지정해야 합니다. 그러면 섹션이 화면에 가득차게 만드는 효과 구현이 가능합니다.
+        $(window).resize(function(){
+            $('.container').width($(window).width()).height($(window).height());
+        });
+
+        setTimeout(function(){
+            $(window).resize()},
+            1000);
+        // .bg-holder 요소에서 parallaxScroll을 실행합니다.
+            $('.bg-holder').parallaxScroll({
+                // parallax-scroll 플러그인의 옵션은 friction 옵션 하나뿐입니다. 이 옵션 값은 0에서 1사이의 소수로 표시하는데, 0이면 배경 이미지가 콘텐츠를 따라 스크롤 되고, 1이면 배경이 완전히 고정되어 콘텐츠만 스크롤 됩니다.
+                // 0과 1사이의 값을 적절히 사용하면 콘텐츠와 배경의 스크롤 속도를 다르게해서 패럴랙스 효과를 낼 수 있습니다.
+            friction: 0.3
+        });
+    });
+  </script>
+      <!-- <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">메인화면</a></li>
+          <li class="breadcrumb-item active" aria-current="page">회사소개</li>
+        </ol>
+      </nav> -->
+
+        <!-- <div class="row">
             <div class="col-md-6">
                 <img src="../resources/Jinho/images/image1.JPG" alt="..." class="img-thumbnail">
             </div>
@@ -65,14 +121,14 @@
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                      <h4>㈜JH드론은 개발해 왔습니다.</h4><br>
-                      <h6>다년간의 축적된 기술을 바탕으로 .</h6>
+                      <h4>~~~~~~~</h4><br>
+                      <h6>~~~~~~~</h6>
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">소개~~~</div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">소개~~~</div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+        
 </body>
 </html>
