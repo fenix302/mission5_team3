@@ -15,36 +15,107 @@
     font-family: GangwonEduPowerExtraBoldA;
 }
 
-.row{
-    margin-top: 20px;
-}
+/* 네비게이션바 */
 .navbar-brand {
     font-size: 30px;
+    color: #fff !important;
 }
 .navbar-brand img{
+    background: #fff;
     width: 50px;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+.mybox{
+    background-color: rgba(0,0,0,.8);
 }
 .navbar{
-    padding: 20px ;
-    background-color: rgb(255, 255, 255) !important
+    padding-top: 10px;
 }
-
 .navbar-nav li{
     margin-left: 70px;
 }
 .navbar-nav li a{
     font-size: 20px;
+    color: #fff !important;
 }
-.breadcrumb{
-    padding-top: 20px;
-}
-.tab-pane{
-    margin: 20px;
-    text-align: center;
 
+
+/* 드랍다운 메뉴 설정 변경 */
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
 }
-.tab-pane h4, h6{
-    font-family: JSongMyung-Regular-KO;
-    font-weight: bold;
+.navbar-toggler{
+    background-color: #fff;
 }
+
+/* 튜불라 적용 */
+#wrapper{
+    z-index: 1 !important;
+}
+.ontop {
+    color:#fff;
+    font-size:2em;
+    padding: 400px 0;
+    text-align: center;
+}
+
+/* section 부분 */
+.section{
+    margin: 100px 0;
+    padding: 50px 0;
+    background-color: #fff;
+}
+.section .row {
+    margin-bottom: 50px;
+}
+.section .row div{
+    text-align: center;
+    line-height: 30px;
+}
+.row{
+    margin-top: 20px;
+}
+
+/* carousel 적용 */
+.gallery-box{
+    background-color: #eee;
+    padding: 85px 0 1px 0;
+    margin-top: 350px;
+}
+.gallery-box h1{
+    text-align: center;
+    font-size: 40px;
+}
+.carousel{
+    margin-bottom: 200px;
+}
+.carousel-inner div{
+    padding-top: 0;
+}
+#logocontainer{
+    margin-bottom: 200px;
+}
+#tubular-shield{
+    z-index: 0 !important;
+}
+
+/* 푸터 */
+.card-footer{
+    background: #000;
+}
+footer div p{
+    color: #fff;
+}
+
+/* 푸터 아이콘들 */
+.icons{
+    text-align: center;
+    vertical-align: middle;
+}
+.icons img{
+    margin: 8px;
+    width: 30px;
+    background-color: #fff;
+}
+
