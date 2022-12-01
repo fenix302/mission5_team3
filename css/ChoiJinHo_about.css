@@ -38,15 +38,26 @@
     font-size: 20px;
     color: #fff !important;
 }
-
+.nav-link:hover{
+    color: #ffdf00 !important;
+}
+.nav-link:focus{
+    color: #ffdf00 !important;
+}
 
 /* 드랍다운 메뉴 설정 변경 */
 .dropdown-menu{
-    background-color: rgba(0, 0, 0, 0) !important;
-    border: none;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid black;
+    margin-top: 14px;
 }
 .navbar-toggler{
     background-color: #fff;
+}
+.dropdown-item:hover{
+    /* 변경사항적용 */
+    background: none !important;
+    color: #ffdf00 !important;
 }
 
 /* 튜불라 적용 */
@@ -59,8 +70,11 @@
     padding: 400px 0;
     text-align: center;
 }
+.ontop h1{
+    font-size: 100px;
+}
 
-/* section 부분 */
+/* about 부분 section */
 .section{
     margin: 100px 0;
     padding: 50px 0;
@@ -72,6 +86,10 @@
 .section .row div{
     text-align: center;
     line-height: 30px;
+}
+.section .row div img{
+    width: 50px;
+    margin-bottom: 30px;
 }
 .row{
     margin-top: 20px;
@@ -100,6 +118,18 @@
     z-index: 0 !important;
 }
 
+/* 추가 작성 필요한 곳 */
+.ontop2 {
+    color:#fff;
+    font-size:2em;
+    padding: 400px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
 /* 푸터 */
 .card-footer{
     background: #000;
@@ -116,6 +146,6 @@ footer div p{
 .icons img{
     margin: 8px;
     width: 30px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
