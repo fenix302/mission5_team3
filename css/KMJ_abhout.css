@@ -5,12 +5,35 @@
    list-style: none;
    text-decoration: none;
    word-break: keep-all;
+   font-family: 'Noto Sans KR', sans-serif;
 }
 
 .header {
    height: 80px;
    width: 100%;
 }
+
+@media (max-width: 900px) {
+   .header {
+      height: 120px;
+   }
+   h1{
+      width: 100%;
+      margin-left: 30%;
+   }
+}
+
+@media (max-width: 740px) {
+   .header {
+      height: 200px;
+   }
+   h1{
+      width: 100%;
+      margin-left: 30%;
+   }
+   
+}
+
 
 .container-fluid {
    background-color: #fff;
@@ -43,6 +66,7 @@ nav li a {
 
 nav li a:hover {
    color: #a60000;
+   font-weight: 700;
 }
 
 /* 배너 */
@@ -60,7 +84,7 @@ content {
 #con1,
 #con2,
 #con3 {
-   width: 400px;
+   width: 360px;
    height: auto;
    float: left;
    background-size: cover;
@@ -70,8 +94,8 @@ content {
 #pic1,
 #pic2,
 #pic3 {
-   width: 400px;
-   height: 300px;
+   width: 360px;
+   height: 280px;
    background-color: darkgray;
    background-size: cover;
 }
@@ -101,6 +125,10 @@ h4 {
    font-size: 22px;
    margin-top: 10px;
    font-weight: 700;
+}
+
+#con3{
+   margin-left: 20px;
 }
 
 #word2 {
@@ -139,7 +167,7 @@ h5 {
    padding: 40px 100px 40px 0px;
 }
 
-#copy {
-   font-size: 12px;
+#copy > p {
+   font-size: 14px;
    font-weight: 100;
 }
