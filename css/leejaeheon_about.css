@@ -24,6 +24,10 @@
     width: 80vw;
 }
 
+.tab-pane{
+    background-color: aliceblue;
+}
+
 .content_card{
     text-align: center;
 }
@@ -34,3 +38,16 @@
     margin-right: 30px;
     display: inline-block;
 }
+
+footer{
+    position: relative;
+    z-index: 99;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 80vw;
+    height: 100px;
+    background-color: black;
+}
+
+
+
