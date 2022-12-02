@@ -102,10 +102,9 @@ footer{
 /* 바텀 영역 간극 조절 */
 .btmenu li{
     position: relative;
-    margin: 0  100px 0 100px;
-    margin-top: 10px;
+    padding-top: 10px;
     display: inline-block;
-
+    margin: 0 50px 0 50px;
 }
 
 .btmenu li a{
