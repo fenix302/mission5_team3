@@ -4,12 +4,6 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'JSongMyung-Regular-KO';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 
 *{
     font-family: GangwonEduPowerExtraBoldA;
@@ -17,19 +11,23 @@
 
 /* 네비게이션바 */
 .navbar-brand {
-    font-size: 30px;
     color: #fff !important;
 }
 .navbar-brand img{
-    background: #fff;
-    width: 50px;
-    margin-right: 20px;
+    width: 80px;
+    height: 55px;
+    vertical-align: top !important;
+}
+.navbar-brand p{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 10px;
+    height: 33px;
 }
 .mybox{
     background-color: rgba(0,0,0,.8);
 }
 .navbar{
-    padding-top: 10px;
 }
 .navbar-nav li{
     margin-left: 70px;
@@ -67,7 +65,7 @@
 .ontop {
     color:#fff;
     font-size:2em;
-    padding: 400px 0;
+    padding: 250px 0 355px 0;
     text-align: center;
 }
 .ontop h1{
@@ -93,6 +91,9 @@
 }
 .row{
     margin-top: 20px;
+}
+.row div{
+    margin-top: 40px;
 }
 
 /* carousel 적용 */
@@ -127,9 +128,6 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-
-
-
 /* 푸터 */
 .card-footer{
     background: #000;
@@ -140,12 +138,17 @@ footer div p{
 
 /* 푸터 아이콘들 */
 .icons{
-    text-align: center;
     vertical-align: middle;
+    text-align: center;
 }
 .icons img{
-    margin: 8px;
+    padding: 0;
+    margin: 20px;
     width: 30px;
     /* background-color: #fff; */
 }
+.icon_box{
+    background-color: rgba(206, 206, 206, 0.8);
+    border-radius: 5px;
 
+}
