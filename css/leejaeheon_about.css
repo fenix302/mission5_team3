@@ -29,6 +29,18 @@ i{
     vertical-align: middle;
 }
 
+.collapse>a{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.collapse>a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+    transition: all 1s;
+}
+
 .imgslide{
     margin: 0 auto;
     margin-top: 20px;
